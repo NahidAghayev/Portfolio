@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<meta charset="UTF-8">
     <meta name="author" content="Nahid Aghayev">
     <meta name="description" content="Contact me">
     <link rel="icon" href="favicon.ico">
@@ -12,46 +11,55 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/home.html">Home Page</a></li>
-                <li><a href="/education.html">My Education</a></li>
-                <li><a href="/schedule.html">My Weekly Schedule</a></li>
+                <li><a href="home.html">Home Page</a></li>
+                <li><a href="education.html">My Education</a></li>
+                <li><a href="schedule.html">My Weekly Schedule</a></li>
             </ul>
         </nav>
     </header>
 
     <section>
-        <h2>Get in Touch</h2>
+        <h1>Get in Touch</h1>
         <form action="mailto:naghayev17893@ada.edu.az" method="post" enctype="text/plain">
-            <label>Your Name:</label><br>
+            <label for="fullname">Your Name:</label><br>
             <input type="text" name="fullname" id="fullname" required><br><br>
 
             <label for="email">Your Email:</label><br>
             <input type="email" name="email" id="email" required><br><br>
 
             <label>How would you like me to contact you?</label><br>
-            <input type="radio" name="contact_method" value="email">Email
-            <input type="radio" name="contact_method" value="phone">Phone<br><br>
+            <input type="radio" name="contact_method" id="contact_email" value="email">
+            <label for="contact_email">Email</label>
+            <input type="radio" name="contact_method" id="contact_phone" value="phone">
+            <label for="contact_phone">Phone</label><br><br>
 
             <label>What topics are you interested in?</label><br>
-            <input type="checkbox" name="topics" value="education">Education
-            <input type="checkbox" name="topics" value="coding">Coding
-            <input type="checkbox" name="topics" value="gaming">Gaming<br><br>
+            <input type="checkbox" name="topics" id="education" value="education">
+            <label for="education">Education</label>
+            <input type="checkbox" name="topics" id="coding" value="coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" name="topics" id="gaming" value="gaming">
+            <label for="gaming">Gaming</label><br><br>
 
-            <label>Reason for contacting:</label><br>
+            <label for="reason">Reason for contacting:</label><br>
             <select name="reason" id="reason">
                 <option value="question">Ask a question</option>
                 <option value="collaboration">Collaboration</option>
                 <option value="other">Other</option>
             </select><br><br>
 
-            <label>Your Message:</label><br>
-            <textarea name="message" rows="5" cols="40" placeholder="Write your message....."></textarea><br><br>
+            <label for="message">Your Message:</label><br>
+            <textarea name="message" id="message" rows="5" cols="40" placeholder="Write your message....."></textarea><br><br>
 
-            <input type="submit">
-            <input type="reset">
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
 
 
         </form>
     </section>
+
+    <footer>
+        <p>&copy; 2025 Nahid Aghayev</p>
+    </footer>
 </body>
 </html>
