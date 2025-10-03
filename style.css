@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    background-color: #f5f5f5;
+    font-family: 'Alan sans', sans-serif;
+    margin: 0 auto;
+}
+
+hr {
+    width: 50%;
+    height: 5px;
+    border: none;
+    border-top: 5px dotted #333;
+    margin: 20px auto;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transition: all 0.3s ease;
+}
+
+.profile-image:hover {
+    width: 220px;
+    height: 220px;
+}
+
+.hobby-list {
+    list-style-type: none;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);;
+}
+
+.hobby-list li {
+    background-color: #f8f9fa;
+    margin: 12px 0;
+    padding: 15px 20px;
+    border-left: 4px solid #007bff;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.hobby-list li::before {
+    content: "▸";
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.3em;
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -0.5em;
+}
+
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.education-table caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.education-table th {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.education-table td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.education-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.education-table tbody tr:nth-child(2n+1) {
+    background-color: #f8f9fa;
+}
+
+.education-table tbody tr:hover {
+    background-color: #e3f2fd;
+    transition: background-color 0.3s ease;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.schedule-table caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.schedule-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.schedule-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.schedule-table tbody tr:nth-child(2n) {
+    background-color: #f8f9fa;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #e3f2fd;
+    transition: background-color 0.3s ease;
+}
+
+.schedule-table td:first-child {
+    font-weight: 600;
+    background-color: #f1f3f4;
+}
+
+.free-time {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Alan Sans', sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.contact-form input[type="radio"] + label,
+.contact-form input[type="checkbox"] + label {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.contact-form input[type="submit"],
+.contact-form input[type="reset"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="reset"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.contact-form input[type="reset"] {
+    background-color: #6c757d;
+}
+
+.contact-form input[type="reset"]:hover {
+    background-color: #545b62;
+}
+
+.contact-form label[for="fullname"]::after,
+.contact-form label[for="email"]::after {
+    content: " *";
+    color: #dc3545;
+}
+
+.contact-form input[type="checkbox"],
+.contact-form input[type="radio"] {
+    accent-color: #007bff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 70px;
+}
+
+.link {
+    padding: 0;
+}
+
+.links a {
+    text-decoration: none;
+    color: #333;
+    padding: 12px 24px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+}
+
+.links a:hover {
+    color: #007bff;
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+}
+
+.links a.active {
+    color: white;
+    background-color: #007bff;
+    font-weight: 600;
+}
+
+.links a.active:hover {
+    color: white;
+    background-color: #007bff;
+    transform: none;
+    cursor: default;
+}
+
+.links a:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}

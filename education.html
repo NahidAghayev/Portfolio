@@ -5,51 +5,58 @@
     <meta name="author" content="Nahid Aghayev">
     <meta name="description" content="Education Background">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
     <title>Education</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="home.html">Home Page</a></li>
-                <li><a href="schedule.html">My Weekly Schedule</a></li>
-                <li><a href="contactme.html">Contact Me</a></li>
-            </ul>
+            <div class="nav-container">
+                <div class="links">
+                    <div class="link"><a href="home.html" >Home</a></div>
+                    <div class="link"><a href="education.html" class="active">My Education</a></div>
+                    <div class="link"><a href="schedule.html">My Weekly Schedule</a></div>
+                    <div class="link"><a href="contactme.html">Contact Me</a></div>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section>
+       <main class="main-content-education">
+        <h1>Education History</h1>
 
-        <table border="1">
-            <caption>Education History</caption>
-            <thead>
-                <tr>
-                    <th>Year</th>
-                    <th>School/University</th>
-                    <th>Location</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2011-2013</td>
-                    <td>Secondary school No. 43</td>
-                    <td>Ganjlik</td>
-                </tr>
-                <tr>
-                    <td>2013-2022</td>
-                    <td>Secondary school No. 33</td>
-                    <td>Masazir</td>
-                </tr>
-                <tr>
-                    <td>2022-2027(expected)</td>
-                    <td>ADA University-BSIT</td>
-                    <td>Ganjlik</td>
-                </tr>
-            </tbody>
-
-        </table>
-
-    </section>
+        <section class="education-section">
+            <table class="education-table" border="1">
+                <caption>My Education</caption>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>School/University</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2011-2013</td>
+                        <td>Secondary school No. 43</td>
+                        <td>Ganjlik</td>
+                    </tr>
+                    <tr>
+                        <td>2013-2022</td>
+                        <td>Secondary school No. 33</td>
+                        <td>Masazir</td>
+                    </tr>
+                    <tr>
+                        <td>2022-2027 (expected)</td>
+                        <td>ADA University - BSIT</td>
+                        <td>Ganjlik</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
     
     <footer>
         <p>&copy; 2025 Nahid Aghayev</p>

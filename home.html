@@ -5,45 +5,53 @@
     <meta name="author" content="Nahid Aghayev">
     <meta name="description" content="Introduction about myself">
     <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="education.html">My Education</a></li>
-                <li><a href="schedule.html">My Weekly Schedule</a></li>
-                <li><a href="contactme.html">Contact Me</a></li>
-            </ul>
+            <div class="nav-container">
+                <div class="links">
+                    <div class="link"><a href="home.html" class="active">Home</a></div>
+                    <div class="link"><a href="education.html">My Education</a></div>
+                    <div class="link"><a href="schedule.html">My Weekly Schedule</a></div>
+                    <div class="link"><a href="contactme.html">Contact Me</a></div>
+                </div>
+            </div>
+
         </nav>
     </header>
 
-    <section>
-        <h1>Introduction</h1>
+    <main class="main-content-home">
+        <h1>Nahid Aghayev</h1>
         
-        <img src="images/profile.png" alt="Portrait of Nahid Aghayev" width="200" height="200">
+        <img src="images/profile.png" alt="Portrait of Nahid Aghayev" width="200" height="200" class="profile-image">
 
 
         <p>
             My name is Nahid Aghayev and I am currently studying a Bachelor of Science in Information Technology at ADA University. This website shares information about who I am, my education backgorund, weekly schedule, and ways to contact me.
-        </p>
+        </p><br>
 
         <p>
             Learn more about my university at 
             <a href="https://www.ada.edu.az" target="_blank">ADA University</a>.
         </p>
-    </section>
+    </main>
 
-    <section>
+    <section class="hobbies">
         <h2>My hobbies</h2>
 
-        <ol>
+        <ol class="hobby-list">
             <li>Playing video games &#x1F3AE;</li> 
             <li>Watching movies or series &#x1F3AC;</li> 
             <li>Coding / learning programming &#x1F4BB;</li> 
         </ol>
-        <img src="/images/gaming.png" alt="Gaming Hobby" width="300" height="200">
-        <img src="/images/coding.png" alt="Gaming Hobby" width="300" height="200">
+        <img src="/images/gaming.png" alt="Gaming Hobby" width="300" height="200" class="hobby-image">
+        <img src="/images/coding.png" alt="Gaming Hobby" width="300" height="200" class="hobby-image">
     </section>
      <footer>
         <p>&copy; 2025 Nahid Aghayev</p>
