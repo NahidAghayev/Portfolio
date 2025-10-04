@@ -310,3 +310,124 @@ header {
     outline: 2px solid #007bff;
     outline-offset: 2px;
 }
+
+.main-content-home {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 40px;
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 0 20px;
+    align-items: start;
+}
+
+.profile-image {
+    grid-column: 1;
+    justify-self: center;
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
+}
+
+.main-content-home h1 {
+    grid-column: 2;
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+.main-content-home p {
+    grid-column: 2;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.main-content-education {
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.main-content-education h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.education-table {
+    float: left;
+    width: 65%;
+    margin-right: 5%;
+}
+
+.education-highlight {
+    position: absolute;
+    right: 0;
+    top: 150px;
+    width: 25%;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.education-section {
+    position: relative;
+}
+
+.education-section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-content-schedule {
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.main-content-schedule h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.schedule-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.schedule-section {
+    display: flex;
+    justify-content: center;
+}
+
+.schedule-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.schedule-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
